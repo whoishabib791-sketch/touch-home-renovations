@@ -7,6 +7,8 @@ import { Wordmark } from "./Wordmark";
 
 const company = [
   { label: "Projects", to: "/projects" },
+  { label: "Before & After", to: "/before-and-after" },
+  { label: "Showroom", to: "/showroom" },
   { label: "Process", to: "/process" },
   { label: "About", to: "/about" },
   { label: "Reviews", to: "/reviews" },
@@ -22,7 +24,8 @@ export function Footer() {
         <div className="lg:col-span-1">
           <Wordmark />
           <p className="mt-6 max-w-xs text-[0.95rem] text-mute">
-            Kitchens, bathrooms and complete home renovations across Melbourne.
+            Touch Home Renovations, based in Epping, VIC, provides high-quality home renovations including kitchen,
+            bathroom and full home remodels across Melbourne.
           </p>
         </div>
         <div>

@@ -1,3 +1,4 @@
+import { site } from "../../data/site";
 import { Button } from "../ui/Button";
 
 export function Hero() {
@@ -7,18 +8,16 @@ export function Hero() {
         <div className="lg:col-span-5">
           <p className="folio text-sage">Epping · Melbourne</p>
           <h1 className="display mt-5 text-[clamp(2.8rem,7vw,5.8rem)]">
-            Your home.
+            Welcome to
             <br />
-            Only better.
+            Touch Home Renovations
           </h1>
-          <p className="mt-6 max-w-md text-[1.05rem] leading-relaxed text-mute">
-            Thoughtfully planned kitchens, bathrooms and complete home renovations, delivered by one experienced
-            Melbourne team from the first conversation to handover.
-          </p>
+          <p className="mt-6 max-w-md text-[1.05rem] leading-relaxed text-mute">{site.welcome}</p>
+          <p className="mt-4 font-serif text-[1.35rem] text-ink">{site.tagline}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button to="/projects">Explore our work</Button>
-            <Button to="/plan-your-renovation" variant="line">
-              Plan your renovation
+            <Button to="/plan-your-renovation">Get your free quote</Button>
+            <Button to="/projects" variant="line">
+              Explore our work
             </Button>
           </div>
         </div>

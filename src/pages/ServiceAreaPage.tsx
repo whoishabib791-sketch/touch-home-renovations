@@ -38,7 +38,7 @@ export function ServiceAreaPage() {
       ? `/bathroom-renovations/${area.slug}`
       : kind === "kitchen"
         ? `/kitchen-renovations/${area.slug}`
-        : `/home-renovations/${area.slug}`;
+        : `/house-renovations/${area.slug}`;
   const nearby = getNearbyAreas(area.slug);
   const project = projects.find((item) => item.suburb === area.name);
 

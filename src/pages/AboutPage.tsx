@@ -60,6 +60,11 @@ export function AboutPage() {
                 </div>
                 <h3 className="mt-6 font-serif text-[2rem] leading-none">{member.name}</h3>
                 <p className="folio mt-2 text-sage">{member.role}</p>
+                {"phone" in member && member.phone ? (
+                  <a href={`tel:${member.phone.replace(/\s+/g, "")}`} className="mt-3 inline-block no-underline hover:text-clay">
+                    {member.phone}
+                  </a>
+                ) : null}
                 <ul className="mt-5 space-y-2 text-mute">
                   {member.facts.map((fact) => (
                     <li key={fact}>{fact}</li>
@@ -75,17 +80,31 @@ export function AboutPage() {
           <div>
             <h2 className="display text-[2.6rem]">Our approach</h2>
             <p className="mt-5 text-mute">
-              We start by listening — the home, the constraints, the budget — rather than assuming a look. From that,
-              a direction is developed for the project. From consultation through to finishing touches, the work is
-              meant to feel organised, not chaotic.
+              We start by listening closely to understand requirements and aspirations. Our approach is research and
+              investigation rather than assumption. From those raw ingredients, ideas are developed and individually
+              tailored. From initial consultation through to finishing touches, the process is peaceful and harmonious.
             </p>
           </div>
           <div>
             <h2 className="display text-[2.6rem]">Our aim</h2>
             <p className="mt-5 text-mute">
-              A renovation is usually one of the larger investments a household makes. Each stage needs to be met
-              properly: design, planning, construction and handover. The mission is straightforward — exacting
-              standards in each person’s area of work, and personal service through the job.
+              With extensive experience at trade and professional level, we are committed to ensuring each stage of the
+              development is appropriately met. Anyone undertaking a building project soon realises it is one of the
+              largest capital investments of their life.
+            </p>
+          </div>
+          <div>
+            <h2 className="display text-[2.6rem]">Construction</h2>
+            <p className="mt-5 text-mute">
+              With our experience and commitment to high quality, you can be assured your project will be completed on
+              time and to the highest standards.
+            </p>
+          </div>
+          <div>
+            <h2 className="display text-[2.6rem]">Our mission</h2>
+            <p className="mt-5 text-mute">
+              As a team, we share one goal — to apply exacting standards in our individual areas of work to deliver the
+              very best in workmanship, quality, attention to detail and personal service.
             </p>
           </div>
         </Container>

@@ -1,23 +1,24 @@
 import { team } from "../../data/team";
 import { Container } from "../ui/Container";
 import { SectionHeader } from "../ui/SectionHeader";
+import { TextLink } from "../ui/TextLink";
 
 const points = [
   {
+    title: "From humble beginnings",
+    body: "We started from humble beginnings, working from a van many years ago — to where we are now: managing, supervising and completing high quality renovations for our numerous satisfied clients.",
+  },
+  {
+    title: "Experienced & qualified",
+    body: "Experienced staff and skilled, qualified tradies combined means work of the highest quality. We simply have the magic touch.",
+  },
+  {
+    title: "Generations of knowledge",
+    body: "Skills and workmanship passed on from generation to generation — from small projects to the latest modern and contemporary designs of today.",
+  },
+  {
     title: "One accountable team",
-    body: "One renovation team coordinating the people and work required across the project.",
-  },
-  {
-    title: "Design + build thinking",
-    body: "Interior design, site management and construction knowledge brought together.",
-  },
-  {
-    title: "Clear communication",
-    body: "A defined process so homeowners understand what happens next.",
-  },
-  {
-    title: "Experienced hands",
-    body: "Years of renovation and trade experience across bathrooms, kitchens and complete homes.",
+    body: "Kitchen, bathroom and full-home transformations coordinated by one renovation team from the Epping yard.",
   },
 ];
 
@@ -28,10 +29,15 @@ export function WhyThr() {
         <div className="lg:col-span-5">
           <SectionHeader
             invert
-            eyebrow="Why THR"
-            title="Renovation without the runaround."
-            body="The fear is rarely the tiles. It’s the builder, the budget, the delays, and whether anyone is actually in charge."
+            eyebrow="Why Touch Home Renovations"
+            title="You dream it, we build it."
+            body="Our team specialises in high-quality transformations that enhance comfort, style and property value — kitchens, bathrooms and complete home renovations."
           />
+          <p className="mt-8">
+            <TextLink to="/about" className="text-stone hover:text-paper">
+              Read more about the company →
+            </TextLink>
+          </p>
         </div>
         <div className="lg:col-span-7">
           <div className="grid gap-10 sm:grid-cols-2">

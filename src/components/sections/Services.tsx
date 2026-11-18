@@ -9,9 +9,9 @@ export function Services() {
     <section className="bg-white py-24 md:py-32">
       <Container>
         <SectionHeader
-          eyebrow="The work"
+          eyebrow="Our services"
           title="One team. Every space."
-          body="Four rooms homeowners ask us about most. Everything else — cabinetry, waterproofing, trades — sits underneath this."
+          body="Touch Home Renovations specialise in home renovations across Melbourne — taking your ideas and combining them with expertise to deliver a renovation suited to your lifestyle and budget."
         />
         <div className="mt-16 flex flex-col">
           {services.map((service) => (

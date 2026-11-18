@@ -19,25 +19,33 @@ export const site = {
     instagram: "https://www.instagram.com/touchhomerenovations/",
   },
   experienceYears: "15+",
+  googleReviews: 48,
+  tagline: "You dream it, we build it.",
+  welcome:
+    "Touch Home Renovations prides itself on providing quality designer homes that truly compliment all lifestyles, meeting customer satisfaction and personal commitment to quality and service to every project. Proudly offering Home, Kitchen and Bathroom renovations services.",
   origin: "https://thrgroup.com.au",
 } as const;
 
 export const nav = [
   { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
   {
-    label: "Renovations",
+    label: "Services",
     to: "/renovations/full-home",
     children: [
       { label: "Full Home Renovations", to: "/renovations/full-home" },
       { label: "Kitchen Renovations", to: "/renovations/kitchens" },
       { label: "Bathroom Renovations", to: "/renovations/bathrooms" },
       { label: "Laundry Renovations", to: "/renovations/laundries" },
+      { label: "Decking", to: "/renovations/decking" },
+      { label: "Before & After", to: "/before-and-after" },
+      { label: "Showroom", to: "/showroom" },
     ],
   },
-  { label: "Projects", to: "/projects" },
-  { label: "Our Process", to: "/process" },
-  { label: "About", to: "/about" },
   { label: "Service Areas", to: "/service-areas" },
+  { label: "Reviews", to: "/reviews" },
+  { label: "Projects", to: "/projects" },
+  { label: "Contact", to: "/contact" },
 ] as const;
 
 export const primaryCta = {

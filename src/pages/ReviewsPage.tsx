@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { TestimonialFeature } from "../components/reviews/TestimonialFeature";
 import { FinalCta } from "../components/sections/FinalCta";
 import { Container } from "../components/ui/Container";
+import { site } from "../data/site";
 import { testimonials, type TestimonialCategory } from "../data/testimonials";
 import { Seo } from "../lib/seo";
 
@@ -31,7 +32,8 @@ export function ReviewsPage() {
           <p className="folio text-sage">Reviews</p>
           <h1 className="display mt-4 text-[clamp(3rem,8vw,6.5rem)]">From the people who lived through it.</h1>
           <p className="mt-6 max-w-xl text-mute">
-            Real Google reviews. We have not invented ratings or review counts for this demo.
+            Real Google reviews from homeowners across Melbourne. Touch Home Renovations is rated Excellent based on{" "}
+            {site.googleReviews} Google reviews.
           </p>
           <div className="mt-10 flex flex-wrap gap-2">
             {filters.map((item) => (

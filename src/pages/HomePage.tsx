@@ -16,8 +16,8 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="Home Renovations Melbourne | Touch Home Renovations"
-        description="Kitchens, bathrooms and complete home renovations delivered across Melbourne by one experienced team from Epping."
+        title="Home Renovations Melbourne | Bathrooms, Kitchens & Full Home Makeovers"
+        description="Touch Home Renovations — quality designer homes, kitchens and bathrooms across Melbourne. Based in Epping. Free quote. 15+ years experience."
         path="/"
       />
       <JsonLd data={localBusinessJsonLd()} />

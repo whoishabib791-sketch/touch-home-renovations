@@ -29,28 +29,28 @@ export const regions: Region[] = [
   {
     id: "North-west",
     bearing: "NW",
-    line: "Keilor and the north-west.",
+    line: "Keilor, Craigieburn and the north-west.",
     image: "/images/living-09.jpg",
     compass: "col-start-1 row-start-2",
   },
   {
     id: "North-east",
     bearing: "NE",
-    line: "Heidelberg through Eltham.",
+    line: "Heidelberg through Eltham and Greensborough.",
     image: "/images/living-04.jpg",
     compass: "col-start-3 row-start-2",
   },
   {
     id: "Inner west",
     bearing: "IW",
-    line: "Ascot Vale and nearby.",
+    line: "Ascot Vale, Essendon and nearby.",
     image: "/images/bath-01.jpg",
     compass: "col-start-1 row-start-3",
   },
   {
     id: "East",
     bearing: "E",
-    line: "Templestowe, Doncaster, Balwyn.",
+    line: "Templestowe, Doncaster, Balwyn and Kew.",
     image: "/images/kitchen-05.jpg",
     compass: "col-start-3 row-start-3",
   },
@@ -64,7 +64,7 @@ export const regions: Region[] = [
   {
     id: "Inner north",
     bearing: "IN",
-    line: "Older streets toward the city.",
+    line: "Preston, Brunswick and older streets toward the city.",
     image: "/images/kitchen-03.jpg",
     compass: "col-start-2 row-start-4",
   },
@@ -72,143 +72,364 @@ export const regions: Region[] = [
 
 export const serviceAreas: ServiceArea[] = [
   {
+    slug: "bundoora",
+    name: "Bundoora",
+    region: "North",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Bundoora for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
     slug: "epping",
     name: "Epping",
     region: "North",
-    services: ["bathroom", "home", "kitchen"],
+    services: ["bathroom", "kitchen", "home"],
     isBase: true,
     badge: "yard",
-    intro:
-      "THR is based in Epping and works with homeowners across the suburb and surrounding north. From the Epping premises we plan kitchens, bathrooms and complete home renovations.",
+    intro: "THR is based in Epping and works with homeowners across the suburb and surrounding north. From the Epping premises we plan kitchens, bathrooms and complete home renovations.",
   },
   {
     slug: "lalor",
     name: "Lalor",
     region: "North",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "Lalor homeowners come to THR for bathroom, kitchen and full-home work that needs one team coordinating the trades.",
-  },
-  {
-    slug: "south-morang",
-    name: "South Morang",
-    region: "North",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "We service homeowners in South Morang with bathroom, kitchen and complete home renovations managed from nearby Epping.",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Lalor for bathroom and full-home renovations, managed from our Epping yard.",
   },
   {
     slug: "mernda",
     name: "Mernda",
     region: "North",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "For Mernda homes — from newer estates to established houses — THR plans and builds kitchens, bathrooms and wider renovations.",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Mernda for bathroom and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "preston",
-    name: "Preston",
-    region: "Inner north",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "We service homeowners in Preston for kitchen, bathroom and house renovations, including older homes that need careful coordination.",
+    slug: "mill-park",
+    name: "Mill Park",
+    region: "North",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Mill Park for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "brunswick",
-    name: "Brunswick",
-    region: "Inner north",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "THR works with Brunswick homeowners on bathroom and home renovations, including tighter footprints and older houses.",
+    slug: "reservoir",
+    name: "Reservoir",
+    region: "North",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Reservoir for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "pascoe-vale",
-    name: "Pascoe Vale",
-    region: "Inner north",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "We service homeowners in Pascoe Vale for bathroom renovations and related home work, from layout changes to complete wet-area rebuilds.",
+    slug: "south-morang",
+    name: "South Morang",
+    region: "North",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in South Morang for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "heidelberg",
-    name: "Heidelberg",
-    region: "North-east",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "THR services homeowners in Heidelberg for house and kitchen renovations, with bathrooms handled as part of the same team.",
+    slug: "thomastown",
+    name: "Thomastown",
+    region: "North",
+    services: ["home"],
+    intro: "Touch Home Renovations services homeowners in Thomastown for full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "heidelberg-west",
-    name: "Heidelberg West",
-    region: "North-east",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "We service homeowners in Heidelberg West for kitchen renovations and related home work.",
+    slug: "broadmeadows",
+    name: "Broadmeadows",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Broadmeadows for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "eltham",
-    name: "Eltham",
-    region: "North-east",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "THR services Eltham homeowners for bathroom and house renovations planned and built by one team.",
+    slug: "campbellfield",
+    name: "Campbellfield",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Campbellfield for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "ivanhoe",
-    name: "Ivanhoe",
-    region: "North-east",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "We service homeowners in Ivanhoe for bathroom renovations and coordinated home work.",
+    slug: "craigieburn",
+    name: "Craigieburn",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Craigieburn for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "templestowe",
-    name: "Templestowe",
-    region: "East",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "THR services Templestowe homeowners for bathroom renovations, including full wet-area rebuilds.",
+    slug: "fawkner",
+    name: "Fawkner",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Fawkner for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "doncaster",
-    name: "Doncaster",
-    region: "East",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "We service homeowners in Doncaster for house renovations and related kitchen and bathroom work.",
+    slug: "glenroy",
+    name: "Glenroy",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Glenroy for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
-    slug: "balwyn",
-    name: "Balwyn",
-    region: "East",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "THR services Balwyn homeowners for house renovations coordinated from design through construction.",
+    slug: "greenvale",
+    name: "Greenvale",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Greenvale for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "hillside",
+    name: "Hillside",
+    region: "North-west",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Hillside for bathroom and full-home renovations, managed from our Epping yard.",
   },
   {
     slug: "keilor",
     name: "Keilor",
     region: "North-west",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "We service homeowners in Keilor for bathroom and house renovations.",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Keilor for bathroom and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "meadow-heights",
+    name: "Meadow Heights",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Meadow Heights for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "roxburgh-park",
+    name: "Roxburgh Park",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Roxburgh Park for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "somerton",
+    name: "Somerton",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Somerton for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "tullamarine",
+    name: "Tullamarine",
+    region: "North-west",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Tullamarine for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "eaglemont",
+    name: "Eaglemont",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Eaglemont for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "eltham",
+    name: "Eltham",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Eltham for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "greensborough",
+    name: "Greensborough",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Greensborough for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "heidelberg",
+    name: "Heidelberg",
+    region: "North-east",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Heidelberg for bathroom and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "heidelberg-west",
+    name: "Heidelberg West",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Heidelberg West for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "ivanhoe",
+    name: "Ivanhoe",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Ivanhoe for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "ivanhoe-east",
+    name: "Ivanhoe East",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Ivanhoe East for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "lower-plenty",
+    name: "Lower Plenty",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Lower Plenty for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "macleod",
+    name: "Macleod",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Macleod for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "montmorency",
+    name: "Montmorency",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Montmorency for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "viewbank",
+    name: "Viewbank",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Viewbank for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "yallambie",
+    name: "Yallambie",
+    region: "North-east",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Yallambie for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "brunswick",
+    name: "Brunswick",
+    region: "Inner north",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Brunswick for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "coburg",
+    name: "Coburg",
+    region: "Inner north",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Coburg for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "fairfield",
+    name: "Fairfield",
+    region: "Inner north",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Fairfield for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "northcote",
+    name: "Northcote",
+    region: "Inner north",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Northcote for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "pascoe-vale",
+    name: "Pascoe Vale",
+    region: "Inner north",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Pascoe Vale for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "preston",
+    name: "Preston",
+    region: "Inner north",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Preston for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "thornbury",
+    name: "Thornbury",
+    region: "Inner north",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Thornbury for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
     slug: "ascot-vale",
     name: "Ascot Vale",
     region: "Inner west",
-    services: ["bathroom", "home", "kitchen"],
-    intro:
-      "THR services Ascot Vale homeowners for bathroom and house renovations.",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Ascot Vale for bathroom and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "essendon",
+    name: "Essendon",
+    region: "Inner west",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Essendon for bathroom and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "balwyn",
+    name: "Balwyn",
+    region: "East",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Balwyn for bathroom and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "balwyn-north",
+    name: "Balwyn North",
+    region: "East",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Balwyn North for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "box-hill",
+    name: "Box Hill",
+    region: "East",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Box Hill for bathroom and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "bulleen",
+    name: "Bulleen",
+    region: "East",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Bulleen for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "doncaster",
+    name: "Doncaster",
+    region: "East",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Doncaster for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "kew",
+    name: "Kew",
+    region: "East",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Kew for bathroom and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "templestowe",
+    name: "Templestowe",
+    region: "East",
+    services: ["bathroom", "kitchen", "home"],
+    intro: "Touch Home Renovations services homeowners in Templestowe for bathroom, kitchen and full-home renovations, managed from our Epping yard.",
   },
   {
     slug: "point-cook",
     name: "Point Cook",
     region: "West",
-    services: ["bathroom", "home", "kitchen"],
+    services: ["bathroom", "kitchen", "home"],
     badge: "completed",
-    intro:
-      "THR has completed whole-home renovation work in Point Cook and continues to service homeowners in the area.",
+    intro: "THR has completed whole-home renovation work in Point Cook and continues to service homeowners in the area.",
+  },
+  {
+    slug: "st-albans",
+    name: "St Albans",
+    region: "West",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in St Albans for bathroom and full-home renovations, managed from our Epping yard.",
+  },
+  {
+    slug: "sunshine",
+    name: "Sunshine",
+    region: "West",
+    services: ["bathroom", "home"],
+    intro: "Touch Home Renovations services homeowners in Sunshine for bathroom and full-home renovations, managed from our Epping yard.",
   },
 ];
 
@@ -221,10 +442,15 @@ export const featuredAreaSlugs = [
   "brunswick",
   "heidelberg",
   "templestowe",
+  "eltham",
+  "keilor",
+  "ascot-vale",
+  "doncaster",
 ] as const;
 
 const legacySlugMap: Record<string, string> = {
   southmorang: "south-morang",
+  meadow: "meadow-heights",
 };
 
 export function normaliseAreaSlug(slug: string) {
@@ -244,7 +470,7 @@ export function getFeaturedAreas() {
 export function areaPath(service: AreaService, slug: string) {
   if (service === "bathroom") return `/bathroom-renovations/${slug}`;
   if (service === "kitchen") return `/kitchen-renovations/${slug}`;
-  return `/home-renovations/${slug}`;
+  return `/house-renovations/${slug}`;
 }
 
 export function areaHubPath(slug: string) {
@@ -272,6 +498,10 @@ export function filterAreas(query: string, region?: string) {
     const queryOk = !needle || area.name.toLowerCase().includes(needle) || area.region.toLowerCase().includes(needle);
     return regionOk && queryOk;
   });
+}
+
+export function areasForService(service: AreaService) {
+  return serviceAreas.filter((area) => area.services.includes(service));
 }
 
 export const areaServiceVisual: Record<AreaService, { image: string; alt: string; frame: string }> = {

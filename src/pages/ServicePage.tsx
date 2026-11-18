@@ -55,12 +55,16 @@ const extras: Record<
   kitchens: {
     hero: "Kitchens made for real life.",
     intro:
-      "A kitchen has to work before it has to impress. THR plans layout, storage, cabinetry and finishes around how the household actually cooks and gathers.",
+      "A kitchen has to work before it has to impress. THR plans layout, storage, cabinetry and finishes around how the household actually cooks and gathers. In Australia, cosmetic updates can start around $10,000–$20,000; mid-range kitchens with new cabinetry and stone often sit around $25,000–$40,000; large high-end kitchens with custom joinery and premium appliances can reach $50,000–$80,000+. Quotes are tailored to your home and local materials.",
     pointsTitle: "What can be transformed",
     points: ["Layout and flow", "Cabinetry and storage", "Benchtops and splashbacks", "Flooring", "Lighting and related services"],
     faqs: [
       { q: "Do you help with selections?", a: "Yes. Dee works on interior direction, and the team helps homeowners lock selections before the build." },
       { q: "Can a kitchen be part of a larger renovation?", a: "Yes. Many projects combine the kitchen with bathrooms, laundry or living." },
+      {
+        q: "How much does a kitchen renovation cost?",
+        a: "Budgets vary with size and finishes. Cosmetic updates may start from about $10k–$20k; mid-range work often $25k–$40k; high-end custom kitchens $50k–$80k+. We provide a quote for your specific project.",
+      },
     ],
     before: "/images/ba-kitchen-a-before.webp",
     after: "/images/ba-kitchen-a-after.webp",
@@ -71,7 +75,7 @@ const extras: Record<
   bathrooms: {
     hero: "Start and end the day better.",
     intro:
-      "Bathroom work fails when waterproofing and sequencing are treated as afterthoughts. THR builds bathrooms around comfort, longevity and certified wet-area work.",
+      "Hiring professionals for bathroom renovations ensures quality, safety and lasting results — plumbing, electrical, tiling and cabinetry handled with precision, plus design advice and materials that meet building codes. THR builds bathrooms around comfort, longevity and certified wet-area work.",
     pointsTitle: "Bathroom scope",
     points: [
       "Demolition and preparation",
@@ -94,17 +98,54 @@ const extras: Record<
   laundries: {
     hero: "A laundry that keeps up.",
     intro:
-      "Laundries are easy to treat as leftover space. Done properly they store more, wear harder and sit visually with the kitchen.",
+      "Hiring professionals for laundry renovations balances style and function — maximising small spaces, building storage-rich designs, and improving ventilation, lighting and layout for everyday use.",
     pointsTitle: "What we focus on",
-    points: ["Storage and workflow", "Durable finishes", "Space efficiency", "Lighting and ventilation", "Consistency with the rest of the home"],
+    points: [
+      "Customised designs that suit your space",
+      "Improved storage and organisation",
+      "Enhanced efficiency and layout",
+      "Durable finishes and smart cabinetry",
+      "Consistency with the rest of the home",
+    ],
     faqs: [
       { q: "Can a laundry be renovated with the kitchen?", a: "Yes. Matching cabinetry and finishes across kitchen and laundry is a common request." },
+      {
+        q: "Do you work on compact apartment laundries?",
+        a: "Yes. Compact and European-style layouts with stacked appliances are part of the work, alongside family-sized laundries.",
+      },
     ],
     before: "/images/ba-laundry-a-before.webp",
     after: "/images/ba-laundry-a-after.webp",
     category: "laundry",
     seoTitle: "Laundry Renovations Melbourne",
     seoDescription: "Laundry renovations in Melbourne focused on storage, workflow and durable finishes.",
+  },
+  decking: {
+    hero: "Outdoor space worth using.",
+    intro:
+      "Decks take sun, rain and heavy use. A professional decking renovation restores beauty, safety and function — often more cost-effective than full replacement — with timber or composite options suited to Melbourne conditions.",
+    pointsTitle: "Decking scope",
+    points: [
+      "Replace damaged boards and reinforce structure",
+      "Sanding, staining, oiling and sealing",
+      "Timber and composite material options",
+      "Railings, lighting and built-in seating upgrades",
+      "Pergolas and outdoor living upgrades",
+    ],
+    faqs: [
+      {
+        q: "When does a deck need renovation?",
+        a: "Warped boards, loose fixings, fading, water stains, splintering, unstable railings or mould are common signs the deck needs attention.",
+      },
+      {
+        q: "Is renovation cheaper than replacement?",
+        a: "Often yes. Targeted repairs, sealing and selective board replacement can extend life without a full rebuild — assessed on site.",
+      },
+    ],
+    category: "outdoor",
+    seoTitle: "Decking Renovations Melbourne",
+    seoDescription:
+      "Decking renovations in Melbourne — board replacement, sealing, timber and composite upgrades by Touch Home Renovations.",
   },
 };
 
@@ -119,7 +160,7 @@ export function ServicePage() {
       ? item.category === "kitchen" || item.category === "full-home"
       : service.id === "laundries"
         ? item.category === "laundry" || item.category === "full-home"
-        : service.id === "full-home"
+        : service.id === "full-home" || service.id === "decking"
           ? item.category === "full-home"
           : item.category === "bathroom",
   );

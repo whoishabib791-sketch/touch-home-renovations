@@ -1,10 +1,11 @@
+import { site } from "../../data/site";
 import { Container } from "../ui/Container";
 
 const items = [
-  { label: "Google reviews", value: "Homeowners across Melbourne" },
-  { label: "Experience", value: "15+ years in renovation" },
+  { label: "Google reviews", value: `${site.googleReviews}+ verified reviews` },
+  { label: "Experience", value: `${site.experienceYears} years in renovation` },
   { label: "Based", value: "Epping, servicing Melbourne" },
-  { label: "Capability", value: "Full-home, kitchen, bathroom, laundry" },
+  { label: "Capability", value: "Home, kitchen, bathroom, laundry & decking" },
 ];
 
 export function TrustStrip() {
